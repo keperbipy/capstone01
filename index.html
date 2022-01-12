@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <link rel="stylesheet" href="sidebarStyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="mainContainer" id="main">
+        <div id="sidebar">
+            <div id="sidebarHeader">
+                <span>Capstone</span>
+            </div>
+
+            <div class="sidebarItem hoverable">
+                <span><i class="fas fa-home"></i></span>
+                <span>Home</span>
+            </div>
+
+            <div class="sidebarItem hoverable">
+                <span><i class="fas fa-boxes"></i></span>
+                <span>Inventory</span>
+            </div>
+
+            <div class="sidebarItem hoverable">
+                <span><i class="fas fa-utensils"></i></span>
+                <span>Menu?</span>
+            </div>
+
+            <div class="sidebarItem hoverable">
+                <span><i class="fas fa-tasks"></i></span>
+                <span>Tasks</span>
+            </div>
+
+            <div class="sidebarItem hoverable">
+                <span><i class="far fa-calendar-alt"></i></span>
+                <span>Schedule</span>
+            </div>
+
+            <div class="sidebarItem hoverable">
+                <span><i class="fas fa-cogs"></i></span>
+                <span>Settings</span>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="contentContainer">
+            <div class="header">
+                <div class="collapseContainer">
+                    <i class="far fa-caret-square-left" id="collapser" onclick="collapseFunc()"></i> <span> &nbsp;&nbsp; Some stuff... Maybe a searchbar or logout button?</span>
+                </div>
+
+            </div>
+            <div class="pageContent">
+                sdff
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="footer">
+                Josh Miller - 2022 - Senior Capstone Project
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+<script>
+    function collapseFunc() {
+
+        if ($('#sidebar').is(":visible")) {
+            $("#main").css('grid-template-columns', '"none"');
+            $(".contentContainer").css('width', "100vw");
+            $("#sidebar").hide();
+            $("#collapser").removeClass("far fa-caret-square-left unselectable");
+            $("#collapser").addClass("far fa-caret-square-right unselectable");
+        } else {
+            $("#main").css('grid-template-columns', '"1fr 6fr"');
+            $(".contentContainer").css('width', '');
+            $("#sidebar").show();
+            $("#collapser").removeClass("far fa-caret-square-right unselectable");
+            $("#collapser").addClass("far fa-caret-square-left unselectable");
+        }
+
+
+    }
+</script>
+
+</html>
