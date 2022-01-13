@@ -6,14 +6,13 @@
 }
 
 .mainContainer {
-    background-color: red;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 6fr;
 }
 
 #sidebar {
-    background-color: orange;
+    background-color: #2E323A;
     min-height: 100vh;
     color: white;
     -webkit-user-select: none;
@@ -35,8 +34,15 @@
     min-height: 75px;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    color: black;
+}
+
 .contentContainer {
-    background-color: blue;
+    background-color: white;
     min-height: 100vh;
     display: flex;
     flex-flow: column
@@ -60,10 +66,8 @@
 }
 
 .collapseContainer {
-    color: white;
     font-size: 2em;
     padding-left: 2%;
-    padding-top: 1.5%;
     max-height: 200px;
 }
 
@@ -72,13 +76,13 @@
 }
 
 .footer {
-    background-color: pink;
+    background-color: white;
     align-self: flex-end;
     width: 100%;
-    border-top: 1px solid gray;
+    border-top: 1px solid #EAEBEB;
 }
 
 .pageContent {
-    background-color: khaki;
+    background-color: #F8F8F8;
     flex-grow: 1;
 }

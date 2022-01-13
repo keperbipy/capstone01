@@ -1,0 +1,15 @@
+.profileCard {
+    background-color: white;
+    border: 2px solid #EAEBEB;
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 5%;
+    row-gap: .5em;
+}
+
+.profileCard img {
+    width: 40%;
+}
