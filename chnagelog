@@ -1,8 +1,0 @@
-01-12-2022 5:24PM
---  initial layout made with sidebar and menu links, top header bar with sidebar collapse button
---  added a profile card to settings page with a default user picture and placeholder info
---  added color picker to profile card that changes sidebar color !!Need to fix this to save choice to localstorage
-
-01-13-2022 11:40AM
---  reorganized file structure of project and fixed appropriate links
---  changed pages to use php inlcudes in order to cut down on code repetition and improve readability of content
