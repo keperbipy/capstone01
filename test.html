@@ -2,318 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Field 1 & 2</title>
+    <script src="test.js" defer></script>
 </head>
 
 
 
 
-
 <body>
-    <div>
-        <div class="ones">
-            <div class="contentCard">
-                <div class="cardHeader" id="availHeader">
-                    <span>My availability</span>
+
+
+    <div class="tasksPageHeader">
+        <h1>Tasks</h1>
+        <div id="last">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            +
+          </button>
+        </div>
+    </div>
+    <div class="tasksPageBody">
+
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add List...</h4>
                 </div>
-                <div class="cardBody" id="availBody">
-                    <div class="availDay">
-                        <div class="availDayHeader">
-                            Monday
-                        </div>
-                        <div class="availDayBody">
-                            <form action="post" style="display:table">
-                                <p>
-                                    <label for="monAvail"> Unavailable:&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                    <input type="checkbox" id="monAvail" name="monAvail" value="noMon">
-                                </p>
-                                <p>
-                                    <label for="monStrt">Available from: </label>
-                                    <input type="time" id="appt" name="monStrt" min="06:00" max="23:59" required>
-                                </p>
-                                <p>
-                                    <label for="monEnd">Until:</label>
-                                    <input type="time" id="appt" name="monEnd" min="06:00" max="23:59" required>
-                                </p>
-
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="availDay">
-                        <div class="availDayHeader">
-                            Tuesday
-                        </div>
-                        <div class="availDayBody">
-                            <form action="post" style="display:table">
-                                <p>
-                                    <label for="monAvail"> Unavailable:&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                    <input type="checkbox" id="monAvail" name="monAvail" value="noMon">
-                                </p>
-                                <p>
-                                    <label for="monStrt">Available from: </label>
-                                    <input type="time" id="appt" name="monStrt" min="06:00" max="23:59" required>
-                                </p>
-                                <p>
-                                    <label for="monEnd">Until:</label>
-                                    <input type="time" id="appt" name="monEnd" min="06:00" max="23:59" required>
-                                </p>
-
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="availDay">
-                        <div class="availDayHeader">
-                            Wednesday
-                        </div>
-                        <div class="availDayBody">
-                            <form action="post" style="display:table">
-                                <p>
-                                    <label for="monAvail"> Unavailable:&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                    <input type="checkbox" id="monAvail" name="monAvail" value="noMon">
-                                </p>
-                                <p>
-                                    <label for="monStrt">Available from: </label>
-                                    <input type="time" id="appt" name="monStrt" min="06:00" max="23:59" required>
-                                </p>
-                                <p>
-                                    <label for="monEnd">Until:</label>
-                                    <input type="time" id="appt" name="monEnd" min="06:00" max="23:59" required>
-                                </p>
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="availDay">
-                        <div class="availDayHeader">
-                            Thursday
-                        </div>
-                        <div class="availDayBody">
-                            <form action="post" style="display:table">
-                                <p>
-                                    <label for="monAvail"> Unavailable:&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                    <input type="checkbox" id="monAvail" name="monAvail" value="noMon">
-                                </p>
-                                <p>
-                                    <label for="monStrt">Available from: </label>
-                                    <input type="time" id="appt" name="monStrt" min="06:00" max="23:59" required>
-                                </p>
-                                <p>
-                                    <label for="monEnd">Until:</label>
-                                    <input type="time" id="appt" name="monEnd" min="06:00" max="23:59" required>
-                                </p>
-
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="availDay">
-                        <div class="availDayHeader">
-                            Friday
-                        </div>
-                        <div class="availDayBody">
-                            <form action="post" style="display:table">
-                                <p>
-                                    <label for="monAvail"> Unavailable:&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                    <input type="checkbox" id="monAvail" name="monAvail" value="noMon">
-                                </p>
-                                <p>
-                                    <label for="monStrt">Available from: </label>
-                                    <input type="time" id="appt" name="monStrt" min="06:00" max="23:59" required>
-                                </p>
-                                <p>
-                                    <label for="monEnd">Until:</label>
-                                    <input type="time" id="appt" name="monEnd" min="06:00" max="23:59" required>
-                                </p>
-
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="availDay">
-                        <div class="availDayHeader">
-                            Saturday
-                        </div>
-                        <div class="availDayBody">
-                            <form action="post" style="display:table">
-                                <p>
-                                    <label for="monAvail"> Unavailable:&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                    <input type="checkbox" id="monAvail" name="monAvail" value="noMon">
-                                </p>
-                                <p>
-                                    <label for="monStrt">Available from: </label>
-                                    <input type="time" id="appt" name="monStrt" min="06:00" max="23:59" required>
-                                </p>
-                                <p>
-                                    <label for="monEnd">Until:</label>
-                                    <input type="time" id="appt" name="monEnd" min="06:00" max="23:59" required>
-                                </p>
-
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="availDay">
-                        <div class="availDayHeader">
-                            Sunday
-                        </div>
-                        <div class="availDayBody">
-                            <form action="post" style="display:table">
-                                <p>
-                                    <label for="monAvail"> Unavailable:&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                    <input type="checkbox" id="monAvail" name="monAvail" value="noMon">
-                                </p>
-                                <p>
-                                    <label for="monStrt">Available from: </label>
-                                    <input type="time" id="appt" name="monStrt" min="06:00" max="23:59" required>
-                                </p>
-                                <p>
-                                    <label for="monEnd">Until:</label>
-                                    <input type="time" id="appt" name="monEnd" min="06:00" max="23:59" required>
-                                </p>
-
-
-                            </form>
-                        </div>
-                    </div>
-
+                <div class="modal-body">
+                    <input type="text" name="" id="newTitle" placeholder="Enter Title">
+                    <button type="button" class="btn btn-primary" style="float:right" id="saveModal">Save changes</button>
                 </div>
+
             </div>
         </div>
     </div>
-    <div id="scheduleContainer">
-        <div class="ones">
-            <div class="contentCard">
-                <div class="cardHeader"><span>Schedule</span></div>
-                <div class="cardBody">
-                    <div class="tableFilter">
-                        <div class="filterButtonsContainer">
-                            <ul>
-                                <li>All</li>
-                                <li>Mgr</li>
-                                <li>FoH</li>
-                                <li>BoH</li>
-                            </ul>
 
-                            <ul>
-                                <li>All</li>
-                                <li>Day</li>
-                                <li>Night</li>
-                            </ul>
-                        </div>
-                        <div class="tableSearch">
-                            <input type="text">
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                    </div>
 
-                    <table>
-                        <tr>
-                            <th> <input type="checkbox" id="all" name="all" value="all"></th>
-                            <th>Name</th>
-                            <th>Wed.</th>
-                            <th>Thr.</th>
-                            <th>Fri.</th>
-                            <th>Sat.</th>
-                            <th>Sun.</th>
-                            <th>Mon.</th>
-                            <th>Tue.</th>
-                        </tr>
 
-                        <tr>
-                            <td> <input type="checkbox" id="all" name="all" value="all"></td>
-                            <td>Wayne D</td>
-                            <td>Open</td>
-                            <td>4-C</td>
-                            <td>0-4</td>
-                            <td>X</td>
-                            <td>O-4</td>
-                            <td>X</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <td> <input type="checkbox" id="all" name="all" value="all"></td>
-                            <td>Erin Q</td>
-                            <td>Open</td>
-                            <td>4-C</td>
-                            <td>0-4</td>
-                            <td>X</td>
-                            <td>O-4</td>
-                            <td>X</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <td> <input type="checkbox" id="all" name="all" value="all"></td>
-                            <td>Ari W</td>
-                            <td>Open</td>
-                            <td>4-C</td>
-                            <td>0-4</td>
-                            <td>X</td>
-                            <td>O-4</td>
-                            <td>X</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <td> <input type="checkbox" id="all" name="all" value="all"></td>
-                            <td>Jenna S</td>
-                            <td>Open</td>
-                            <td>4-C</td>
-                            <td>0-4</td>
-                            <td>X</td>
-                            <td>O-4</td>
-                            <td>X</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <td> <input type="checkbox" id="all" name="all" value="all"></td>
-                            <td>Boone P</td>
-                            <td>Open</td>
-                            <td>4-C</td>
-                            <td>0-4</td>
-                            <td>X</td>
-                            <td>O-4</td>
-                            <td>X</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <td> <input type="checkbox" id="all" name="all" value="all"></td>
-                            <td>Abby B</td>
-                            <td>Open</td>
-                            <td>4-C</td>
-                            <td>0-4</td>
-                            <td>X</td>
-                            <td>O-4</td>
-                            <td>X</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <td> <input type="checkbox" id="all" name="all" value="all"></td>
-                            <td>Josh M</td>
-                            <td>Open</td>
-                            <td>4-C</td>
-                            <td>0-4</td>
-                            <td>X</td>
-                            <td>O-4</td>
-                            <td>X</td>
-                            <td>X</td>
-                        </tr>
-                    </table>
-                    <div class="tableFooter">
-                        Sorting the days by ascending descending by time worked?
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>
+
+
+
+
+
+
 
 
 
 </body>
+
 
 </html>

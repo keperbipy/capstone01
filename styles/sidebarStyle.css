@@ -11,8 +11,13 @@
     grid-template-columns: 1fr 6fr;
 }
 
+#aside {
+    display: flex;
+}
+
 #sidebar {
     background-color: #2E323A;
+    width: 1fr;
     min-height: 100vh;
     color: white;
     -webkit-user-select: none;
@@ -23,6 +28,8 @@
     /* IE10+/Edge */
     user-select: none;
     /* Standard */
+    position: fixed;
+    width: 14.3%;
 }
 
 #sidebarHeader {
@@ -32,6 +39,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 2em;
     min-height: 75px;
+    width: 100%;
 }
 
 .header {

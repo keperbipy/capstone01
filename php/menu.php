@@ -21,5 +21,7 @@
     <?php include '../html/footer.html';?>
 
 </body>
-
+<script>
+        $("#sidebar").css("background-color", localStorage.getItem('sidecolor'));
+</script>
 </html>

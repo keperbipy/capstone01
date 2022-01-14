@@ -13,3 +13,10 @@
 --  added section for the schedule below availability and populated with sample data
 --  filter buttons added for schedule, not currently functioning
 --  created a todo file and test html and css files
+
+01-14-2022 6:16PM
+--  Added to Tasks page of website; features include:
+    --  bootstrap modal to add new lists
+    --  list cards that can be removed or added too
+    --  list items can be marked as done or deleted
+    --  page is saved in localstorage in order to save lists

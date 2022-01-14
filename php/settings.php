@@ -30,6 +30,10 @@
             transform: scale(1.1);
         }
     </style>
+    <script>
+        $("#sidebar").css("background-color", localStorage.getItem('sidecolor'));
+        console.log("dsfjsdfk");
+    </script>
 
 </head>
 
@@ -63,20 +67,26 @@
 
 <script>
     $("#picker1").colorPick({
-        'initialColor': '#8e44ad',
+        'initialColor': localStorage.getItem('sidecolor'),
         'palette': ["#1abc9c", "#16a085", "#2ecc71", "#27ae60", "#3498db", "#2980b9", "#9b59b6", "#8e44ad", "#34495e", "#2c3e50", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#ecf0f1"],
         'onColorSelected': function() {
-            console.log("The user has selected the color: " + this.color)
+            
             this.element.css({
                 'backgroundColor': this.color,
                 'color': this.color
             });
             $("#sidebar").css("background-color",this.color);
             
+            localStorage.setItem('sidecolor', this.color);
+                
+           console.log(localStorage.getItem('sidecolor'));
+            
 
 
         }
     });
 </script>
-
+<script>
+        $("#sidebar").css("background-color", localStorage.getItem('sidecolor'));
+</script>
 </html>

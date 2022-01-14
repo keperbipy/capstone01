@@ -5,3 +5,8 @@
 # add page number buttons for schedule table
 # availability - make function properly (store selection in localstorage?)
 # either fix spacing of availability or change layout
+
+# change sidebar collapse to show icons on collapse
+
+# maybe fix tasks so that when adding a new list it saves it even if you dont add anything to it
+# fix styling of tasks stuff

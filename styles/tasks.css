@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+}
+
+.todoWrapper * {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+
+.todoWrapper {
+    display: flex;
+    width: 450px;
+    padding: 0;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.todoHead {
+    background-color: darkgrey;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.todoHead h1 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.submitBtn {
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: rgba(240, 128, 128, .5);
+}
+
+.task {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid gray;
+    display: flex;
+    column-gap: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.taskcheck {
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.taskcheck:hover {
+    cursor: pointer;
+}
+
+.checked {
+    background-color: rgb(60, 255, 0);
+}
+
+.striked {
+    text-decoration: line-through;
+}
+
+.closeTask {
+    margin-left: auto;
+    font-size: 20px;
+    display: none;
+}
+
+.closeTaskButton {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.closeTask:hover {
+    cursor: pointer;
+}
+
+.closeTask i {
+    font-size: 20px;
+    color: red;
+}
+
+.closeTask i:hover {
+    cursor: pointer;
+}
+
+.taskList {
+    max-height: 275px;
+    overflow: auto;
+}
+
+.taskList::-webkit-scrollbar {
+    display: none;
+}
+
+.taskList {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.todoTextInput {
+    background-color: darkgrey;
+}
+
+.tasksPageHeader {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+#last {
+    margin-left: auto;
+}
+
+.tasksPageBody {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-left: 25px;
+}
+
+.deleteList {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.deleteList:hover {
+    cursor: pointer;
+}
+
+.deleteList i {
+    font-size: 30px;
+}
